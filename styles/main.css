@@ -1,29 +1,43 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: var(--text-menu-color);
 }
 
 :root {
   --text-menu-color: #4a4a4a;
   --text-main-color: #ffffff;
   --color-main: #3cdbc0;
-  --font-family: "Rubik", sans-serif;
+  --letter-: "Rubik", sans-serif;
 }
 
 .header-1 {
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
   width: 155px;
+  padding: 10px 0 10px 0;
 }
 
 .links {
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--letter-);
+  color: var(--text-menu-color);
   font-size: 16px;
+  padding: 10px 0 13px 0;
 }
 
 .main-1 {
-  width: 100vh;
   height: 100vh;
   background-color: var(--color-main);
   display: flex;
@@ -33,7 +47,34 @@
 }
 
 .title {
+  word-spacing: 100vw;
   color: var(--text-main-color);
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
+}
+
+@media all and (min-width: 768px) {
+  .header-1 {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    color: var(--text-menu-color);
+    font-size: 16px;
+    padding: 10px 0 13px 0;
+  }
 }
