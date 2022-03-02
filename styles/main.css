@@ -1,5 +1,10 @@
 * {
-  font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --text-menu-color: #4a4a4a;
+  --text-main-color: #ffffff;
+  --font-family: "Rubik", sans-serif;
 }
